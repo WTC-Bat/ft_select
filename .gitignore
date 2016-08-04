@@ -2,7 +2,7 @@
 *.o
 *.a
 a.out
-minishell
+ft_select
 *.dSYM
 
 # Generated files
