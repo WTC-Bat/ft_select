@@ -5,7 +5,7 @@ HEAD = "./includes/"
 LFTHEAD = "./libft/"
 LIBFT = -L ./libft/ -lft
 
-SRCS = $(SRC)ft_select.c
+SRCS = $(SRC)ft_select.c $(SRC)fts_funcs.c
 
 all: $(NAME)
 
