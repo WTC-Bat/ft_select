@@ -45,27 +45,9 @@ static void	ft_select(char **args)
 {
 	int		scnt;
 	int		cnt;
-	//int		wmax;
-	//int		hmax;
 
 	scnt = 1;
 	cnt = 0;
-	/*
-	wmax = (fts_get_cols(void) / 5);
-	hmax = (fts_get_lines(void) / 5);
-	if (wmax < 1)
-		ft_putendl_fd("Error: Not enough columns", 2);
-	else if (hmax < 1)
-		ft_putendl_fd("Error: Not enough lines", 2);
-	else
-	{
-		fts_clear_term(void);
-		while (args[scnt] != NULL)
-		{
-			//?
-		}
-	}
-	*/
 	fts_clear_term();
 	display_args(args);
 }
