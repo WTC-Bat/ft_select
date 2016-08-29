@@ -18,29 +18,3 @@ int		fts_longest_arg(char **args)
 	}
 	return (longest);
 }
-
-char	**fts_pad_args(int longest, char **args)
-{
-	int		cnt;
-	size_t	len;
-	//int		pcnt;
-	char	*pad;
-
-	cnt = 0;
-	len = 0;
-	//pcnt = 0;
-	while (args[cnt] != NULL)
-	{
-		/*
-		**	Not too desirable?
-		*/
-		if (args[cnt] < longest)
-		{
-			len = ft_strlen(args[cnt]);
-			//pad = (char *)malloc(sizeof(char) * (longest - len));
-			ft_memset(pad, ' ', (longest - len));
-			args[cnt] = ft_strcat(args[cnt], pad);	//leak?
-		}
-		cnt++;
-	}
-}
