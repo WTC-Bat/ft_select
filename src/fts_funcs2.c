@@ -1,10 +1,16 @@
 #include "ft_select.h"
 
-int		fts_longest_arg(char **args)
+/*
+**int		fts_longest_arg(char **args)
+*/
+/*
+**	Untested
+*/
+size_t	fts_longest_arg(char **args)
 {
-	int		longest;
-	int		len;
-	int		cnt;
+	size_t	longest;
+	size_t	len;
+	size_t	cnt;
 
 	longest = 0;
 	len = 0;
@@ -20,10 +26,18 @@ int		fts_longest_arg(char **args)
 }
 
 /*
-**	Returns a series of spaces to use a spacing
+**	Returns a series of spaces to use as spacing
 **	between args.
+**	Untested
 */
-char	*fts_spacepad(char *arg, int longest)
+char	*fts_spacepad(char *arg, size_t longest)
 {
-	
+	size_t	arglen;
+	size_t	spccnt;
+	char	*spaces
+
+	arglen = ft_strlen(arg);
+	spccnt = longest - arglen;
+	ft_memset(spaces, ' ', spccnt);	//?
+	return (spaces);
 }
