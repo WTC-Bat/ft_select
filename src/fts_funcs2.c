@@ -18,3 +18,12 @@ int		fts_longest_arg(char **args)
 	}
 	return (longest);
 }
+
+/*
+**	Returns a series of spaces to use a spacing
+**	between args.
+*/
+char	*fts_spacepad(char *arg, int longest)
+{
+	
+}
